@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Letter 💌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🎉 Decorations -->
+<div class="decorations">
+    <span class="sticker">🎈</span>
+    <span class="sticker">🎁</span>
+    <span class="sticker">🎉</span>
+    <span class="sticker">💖</span>
+    <span class="sticker">✨</span>
+</div>
+
+<!-- 🎈 Balloons -->
+<div class="balloonWrapper">
+    <img src="balloon.png">
+    <img src="balloon.png">
+    <img src="balloon.png">
+    <img src="balloon.png">
+    <img src="balloon.png">
+</div>
+
+<!-- 🎵 Music -->
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<h1>💌 A Special Letter</h1>
+
+<p style="padding:20px; font-size:18px;">
+WITH LOTS OF LOVE,<br><br>
+
+Happy Anniversary to our amazing parents❤️<br><br>
+
+Today isn't just about a date on calendar—it's about celebrating our amazing parents together.
+We have spent a lot of happy moments together, full of laughter, arguments and care.
+We can't have the same time together when we were little kids and used to play with you.
+We will not be able to live together at home for so long due to many reasons but wherever we are we miss you and our home so much.
+Living without you feels lonely and we want to return home as early as possible.<br><br>
+
+Ghar se dur reh kar, bhutt saari baate yaad aati hai!  
+Jaise mummy ka bnaya hua khana, papa ke sath baith kr khana or TV dekhna, raat ko sbke sath golgappe khana.  
+Aap dono ka hmesha ladte rhna or khud hi theek kr lena ❤️  
+Chahe kitna bhi lado, fir bhi aap ek dusre ka dhyaan rkhte ho.<br><br>
+
+Seeing both of you together is the most beautiful thing in our life.  
+We know you both miss us a lot. But we hope you start spending more time together.
+We don’t like seeing you fight over small things. Try to love each other more 💖<br><br>
+
+We wish you both many more years of togetherness, happiness and good health.  
+We feel so lucky to be your kids 💖<br><br>
+
+We love you both more than words can ever say ❤️<br><br>
+
+FOREVER looks beautiful on you both!! 💕<br><br>
+
+We can't gift something big, but we hope this little gift makes you feel special.
+</p>
+
+<br>
+
+<button onclick="location.href='index.html'">⬅ Back to Home</button>
+
+<!-- 💖 Feedback -->
+<div id="feedbackSection" style="margin-top:20px; text-align:center;">
+    <h2>Did you like our gift? 💖</h2>
+
+    <button onclick="showThankYou()">Yes 😊</button>
+    <button id="noBtn" onmouseover="moveNo()">No 😜</button>
+</div>
+
+<!-- 🎉 Thank You Screen -->
+<div id="thankYouScreen">
+
+    <h1>
+        we knew this would make you happy..!!😃<br><br>
+
+        Aap dono ki jodi hai bilkul kamaal,<br>
+        Thodi si ladai, thoda sa bawaal!<br>
+        Par end mein ho jaata sab set,<br>
+        Isliye toh kehte hain — Best Parents Ever- No Regret ❤️<br><br>
+
+        Ladte ho, manaate ho, phir muskuraate ho,<br>
+        Aap dono hi toh ho jo ghar ko ghar banaate ho! ❤️
+    </h1>
+
+    <div class="thankBalloons">
+        <img src="balloon.png">
+        <img src="balloon.png">
+        <img src="balloon.png">
+        <img src="balloon.png">
+        <img src="balloon.png">
+        <img src="balloon.png">
+        <img src="balloon.png">
+        <img src="balloon.png">
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+<script>
+document.addEventListener("click", function() {
+    let music = document.getElementById("bgMusic");
+    if (music.paused) {
+        music.play();
+    }
+});
+</script>
+
+</body>
+</html>

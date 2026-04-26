@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Anniversary ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="container">
+
+    <h1>Happy Anniversary Mummy Papa ❤️</h1>
+
+    <!-- Typing Text -->
+    <h2 id="typing"></h2>
+
+    <!-- Slideshow -->
+    <div class="slideshow">
+        <img id="slide">
+    </div>
+
+   <!-- Video Button -->
+<button onclick="showVideo()">Click for Surprise 🎁</button>
+
+<!-- Video Section -->
+<div id="videoBox" style="display:none; margin-top:20px;">
+    <video id="surpriseVideo" width="320" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+</div>
+    <!-- Letter Button -->
+    <button onclick="location.href='letter.html'">Read My Letter 💌</button>
+
+</div>
+
+<!-- THANK YOU SCREEN -->
+<div id="thankYouScreen">
+    <h1>Thank You ❤️</h1>
+</div>
+
+<!-- Emoji container -->
+<div id="emojiContainer"></div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+<!-- Start music on click -->
+<script>
+document.addEventListener("click", function() {
+    document.getElementById("bgMusic").play();
+});
+</script>
+
+</body>
+</html>
